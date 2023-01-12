@@ -1,16 +1,16 @@
 import React from 'react'
 import './VaccineCard.css'
 
-function VaccineCard() {
+function VaccineCard({title, content}) {
   return (
     <>
    
     <div className='vaccine'>
         <div className='vaccine_title'>
-            Here goes the vaccine title
+            {title}
         </div>
         <div className='vaccine_content'>
-            Here goes the vaccine content
+            {content}
         </div>
 
     </div>

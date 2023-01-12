@@ -5,9 +5,9 @@ import "./Treatment.css"
 function Treatment() {
   return (
     <>
-    <div><b>Treatment</b></div>
+    <div id='#treatment'><b>Treatment</b></div>
     <div className='treatment'>
-    <TreatmentCard/>
+    <TreatmentCard title={"Here is the title"} content={"Here is the conntent"}/>
     <TreatmentCard/>
     <TreatmentCard/>
     </div>

@@ -1,16 +1,16 @@
 import React from 'react'
 import './CasesCard.css'
 
-function CasesCard() {
+function CasesCard({logo,title, number}) {
   return (
     <div className='case_card'>
         <div classsName='case_card_logo'>
-            Here is the logo section
+            {logo}
 
             </div>
-        <div className='case_card_title'>Here goes the title
+        <div className='case_card_title'>{title}
         </div>
-        <div className='case_card_number'>Here goes the numbers</div>
+        <div className='case_card_number'>{number}</div>
 
     </div>
   )
