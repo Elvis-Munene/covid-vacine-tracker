@@ -2,8 +2,13 @@
     background-color: darkcyan;
     height: 50vh;
 }
-.vaccine{
-    display: flex;
-    justify-content: space-around;
 
+.vaccine_component_1{
+    display: flex;
+    padding: 2rem;
+    border: solid 2px black;
+}
+.vaccine_component{
+    display: flex;
+    justify-content: center;
 }

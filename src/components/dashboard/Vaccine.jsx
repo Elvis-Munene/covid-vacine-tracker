@@ -7,12 +7,12 @@ function Vaccine() {
     <>
     <div className="vaccine_class">
      <div className="vaccine_title" id='#vaccine'><b>Vaccines</b></div>
-     <div className="vaccine">
-     <VaccineCard title={"Here goes the title"} content="Here goes the content"/>
-     <VaccineCard/>
-     <VaccineCard/>
-     <VaccineCard/>
-     <VaccineCard/>
+     <div className="vaccine_component">
+     <div className='vaccine_component_1'><VaccineCard title={"Here goes the title"} content="Here goes the content"/></div>
+     <div className='vaccine_component_1'><VaccineCard title={"Here goes the title"} content="Here goes the content"/></div>
+     <div className='vaccine_component_1'><VaccineCard title={"Here goes the title"} content="Here goes the content"/></div>
+     <div className='vaccine_component_1'><VaccineCard title={"Here goes the title"} content="Here goes the content"/></div>
+     <div className='vaccine_component_1'><VaccineCard title={"Here goes the title"} content="Here goes the content"/></div>
      </div>
      </div>
      </>
