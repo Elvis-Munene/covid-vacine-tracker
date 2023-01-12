@@ -5,6 +5,7 @@ import './Vaccine.css'
 function Vaccine() {
   return (
     <>
+    <div className="vaccine_class">
      <div className="vaccine_title" id='#vaccine'><b>Vaccines</b></div>
      <div className="vaccine">
      <VaccineCard title={"Here goes the title"} content="Here goes the content"/>
@@ -12,6 +13,7 @@ function Vaccine() {
      <VaccineCard/>
      <VaccineCard/>
      <VaccineCard/>
+     </div>
      </div>
      </>
   )

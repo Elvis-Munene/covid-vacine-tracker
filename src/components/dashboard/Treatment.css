@@ -1,3 +1,7 @@
+.treatment_class{
+    background-color: aquamarine;
+    height: 50vh;
+}
 .treatment{
     display: flex;
     justify-content: space-around;

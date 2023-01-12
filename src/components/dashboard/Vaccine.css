@@ -1,3 +1,7 @@
+.vaccine_class{
+    background-color: darkcyan;
+    height: 50vh;
+}
 .vaccine{
     display: flex;
     justify-content: space-around;

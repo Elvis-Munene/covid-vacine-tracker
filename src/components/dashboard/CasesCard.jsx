@@ -8,10 +8,11 @@ function CasesCard({logo,title, number}) {
             {logo}
 
             </div>
+        <div class='covid_card_results'>
         <div className='case_card_title'>{title}
         </div>
         <div className='case_card_number'>{number}</div>
-
+        </div>
     </div>
   )
 }
