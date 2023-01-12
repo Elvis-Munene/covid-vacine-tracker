@@ -7,7 +7,7 @@ function Navbar() {
     <div>
         <nav class="navbar bg-primary">
   <div className="container-fluid">
-    <a className="navbar-brand">Logo</a>
+    <div className="navbar-brand">Logo</div>
     
 
     <li class="nav-item">
@@ -23,7 +23,7 @@ function Navbar() {
     
     <form className="d-flex" role="search">
       <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button className="btn btn-outline-success" type="submit">Search</button>
+      <button className="btn btn-outline-dark" type="submit">Search</button>
     </form>
   </div>
 </nav>
