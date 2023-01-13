@@ -1,4 +1,8 @@
 .vaccine{
-    color: red;
+    color: white;
+    
     
     }
+.vaccine_content p {
+    color: red;
+}

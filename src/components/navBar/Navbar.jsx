@@ -14,17 +14,13 @@ function Navbar() {
           <a class="nav-link active" aria-current="page" href="#">COVID-19</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="vaccine">VACCINE</a>
+          <a class="nav-link" href="#vaccine">VACCINE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="treatment">TREATMENT</a>
+          <a class="nav-link" href="#treatment">TREATMENT</a>
         </li>
   
     
-    <form className="d-flex" role="search">
-      <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button className="btn btn-outline-dark" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 

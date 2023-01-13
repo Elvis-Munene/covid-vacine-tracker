@@ -10,7 +10,7 @@ function VaccineCard({title, content}) {
             {title}
         </div>
         <div className='vaccine_content'>
-            {content}
+            <p>{content}</p>
         </div>
 
     </div>

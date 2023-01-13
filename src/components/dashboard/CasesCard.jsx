@@ -4,7 +4,7 @@ import './CasesCard.css'
 function CasesCard({logo,title, number}) {
   return (
     <div className='case_card'>
-        <div classsName='case_card_logo'>
+        <div className='case_card_logo'>
             {logo}
 
             </div>
