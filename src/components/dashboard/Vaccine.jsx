@@ -2,7 +2,8 @@ import React from 'react'
 import VaccineCard from './VaccineCard'
 import './Vaccine.css'
 
-function Vaccine() {
+function Vaccine({vaccineStats}) {
+console.log(vaccineStats)
   return (
     <>
     <div className="vaccine_class">
