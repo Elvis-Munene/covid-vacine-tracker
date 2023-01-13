@@ -27,7 +27,7 @@ function Vaccine({vaccineStats}) {
   return (
     <>
     <div className="vaccine_class">
-     <div className="vaccine_title" id='vaccine'><b>Vaccines</b></div>
+     <div className="vaccine_title" id='vaccine'><b>The following are some of the various vaccine names and their categories</b></div>
      <div className="vaccine_component">
     
      { vaccineStats?.map((vaccine, index) => {

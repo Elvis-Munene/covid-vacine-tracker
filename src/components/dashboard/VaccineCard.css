@@ -1,8 +1,9 @@
 .vaccine{
-    color: white;
+    background-color: brown;
     
     
     }
-.vaccine_content p {
-    color: red;
+.vaccine_title {
+    font-style: italic;
+
 }
