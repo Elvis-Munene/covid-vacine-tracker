@@ -2,7 +2,11 @@ import React from 'react'
 import CasesCard from './CasesCard'
 import "./Covid.css"
 
-function Covid() {
+function Covid({covidStats}) {
+    console.log(covidStats)
+ 
+   
+
   return (
     <>
     <div className='covid_class'>

@@ -9,7 +9,7 @@ function TreatmentCard( {title, content}) {
             {title}
         </div>
         <div className='treatment_content'>
-            {content}
+           <p>{content}</p>
 
         </div>
 
