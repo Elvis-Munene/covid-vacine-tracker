@@ -2,10 +2,10 @@
 
 The webiste informs people about the present update of the COVID-19 pandemic
 
-#### By **Gitau Elvis Munene**![java-app]()
+#### By **Gitau Elvis Munene**![java-app]("./screen_shot.png")
 
 # depolyed link
-
+https://covid-vacine-tracker.vercel.app/
 # Public API links
 
 https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/
