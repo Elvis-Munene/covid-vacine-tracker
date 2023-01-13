@@ -8,6 +8,7 @@ import Navbar from './components/navBar/Navbar';
 function App() {
 
   const [covidData, setCovidData] = useState();
+  const [treatmentData, setTreatmentData] = useState();
 
   const options = {
       method: 'GET',
@@ -17,13 +18,17 @@ function App() {
       }
   };
 
-  
-  
   useEffect(()=>{
       fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/`, options)
       .then((response)=> response.json())
       .then((response)=> setCovidData(response))  
   },[])
+
+  useEffect(()=>{
+    fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/vaccines/get-all-treatment`, options)
+    .then((response)=> response.json())
+    .then((response)=> setTreatmentData(response))  
+},[])
   
 
 
@@ -32,8 +37,8 @@ function App() {
     <div className="App">
       <Navbar/>
       <Covid covidStats={covidData}/>
-      <Vaccine/>
-      <Treatment/>
+      <Vaccine />
+      <Treatment treatmentStats={treatmentData}/>
     
     </div>
   );

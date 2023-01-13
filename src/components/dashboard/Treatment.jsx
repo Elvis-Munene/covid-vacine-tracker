@@ -2,7 +2,8 @@ import React from 'react'
 import TreatmentCard from './TreatmentCard'
 import "./Treatment.css"
 
-function Treatment() {
+function Treatment({treatmentStats}) {
+    console.log(treatmentStats)
   return (
     <>
     <div className='treatment_class'>
