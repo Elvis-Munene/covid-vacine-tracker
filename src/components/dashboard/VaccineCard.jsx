@@ -1,18 +1,12 @@
 import React from "react";
-import "./VaccineCard.css";
+
 
 function VaccineCard({ title, content }) {
   return (
     <>
     
-        {/* <div className='vaccine_title'>
-           <h5>{title}</h5>
-        </div>
-        <div className='vaccine_content'>
-            <p>{content}</p>
-        </div> */}
-    
-  <div className="card  mb-3">
+     
+  <div className="card text-bg-info mb-3">
     <div className="card">
       <div className="card-body">
         Vaccine Name:<h5 className="card-title">{title}</h5>

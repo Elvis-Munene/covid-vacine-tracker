@@ -13,7 +13,7 @@ function TreatmentCard( {title, content}) {
 
         </div> */}
 
-<div className="card  mb-3">
+<div className="card text-bg-info mb-3 ">
     <div className="card">
       <div className="card-body">
         Treatment Name:<h5 className="card-title">{title}</h5>
