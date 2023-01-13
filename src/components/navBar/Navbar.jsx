@@ -7,7 +7,7 @@ function Navbar() {
     <div>
         <nav class="navbar bg-primary">
   <div className="container-fluid">
-    <div className="navbar-brand">Logo</div>
+    <div className="navbar-brand">COVID-TRACKER</div>
     
 
     <li class="nav-item">

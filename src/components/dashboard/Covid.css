@@ -1,5 +1,5 @@
 .covid_class{
-    background-color: aqua;
+    background-color: white;
     height: 50vh;
 }
 .covid{
@@ -8,6 +8,31 @@
 
 }
 .covid_component_1{
+    padding: 2rem;
+    border: solid black;
+}
+.covid_component_2{
+    margin-top: 1rem;
+    padding: 2rem;
+    border: solid black;
+}
+.covid_component_3{
+    margin-top: 1rem;
+    padding: 2rem;
+    border: solid black;
+}
+
+.covid_component_4{
+    padding: 2rem;
+    border: solid black;
+}
+.covid_component_5{
+    margin-top: 1rem;
+    padding: 2rem;
+    border: solid black;
+}
+.covid_component_6{
+    margin-top: 1rem;
     padding: 2rem;
     border: solid black;
 }

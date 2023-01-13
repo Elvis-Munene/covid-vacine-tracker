@@ -1,6 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import CasesCard from './CasesCard'
 import "./Covid.css"
+import { BiPlusMedical } from 'react-icons/bi'; 
+import {MdAddchart} from 'react-icons/md';
+import { BsCardChecklist } from 'react-icons/bs'; 
+import { GrStatusCritical } from 'react-icons/gr'; 
+import { GiDeathSkull } from 'react-icons/gi'; 
+
 
 function Covid({covidStats}) {
     
@@ -34,7 +40,7 @@ console.log(worldStats);
   return (
     <>
     <div className='covid_class'>
-    <div id='#covid'><b>This Section Covers the covid component</b></div>
+    <div id='#covid'><b>The following is the current covid-19 statistics</b></div>
     <div className='covid'>
           {/* { covidStats?.map((covid, index) => {
     return(
@@ -48,14 +54,16 @@ console.log(worldStats);
         )
 
 })}  */}
-       
-    <div className='covid_component_1'><CasesCard logo={"This is the logo section"} title={"Total Cases"} number={worldStats.TotalCases}/></div>
-    <div className='covid_component_1'><CasesCard logo={"This is the logo section"} title={"New cases"} number={worldStats.NewCases}/></div>
-    <div className='covid_component_1'><CasesCard logo={"This is the logo section"} title={"Active cases"} number={worldStats.active}/></div>
-    <div className='covid_component_1'><CasesCard logo={"This is the logo section"} title={"Critical"} number={worldStats.critical}/></div>
-    <div className='covid_component_1'><CasesCard logo={"This is the logo section"} title={"TOtal Deaths"} number={worldStats.deaths}/></div>
-    <div className='covid_component_1'><CasesCard logo={"This is the logo section"} title={"New Deaths"} number={worldStats.newdeaths}/></div>  
-
+     <div className='left'> 
+    <div className='covid_component_1'><CasesCard logo={<BiPlusMedical/>} title={"Total Cases"} number={worldStats.TotalCases}/></div>
+    <div className='covid_component_2'><CasesCard logo={<MdAddchart/>} title={"New cases"} number={worldStats.NewCases}/></div>
+    <div className='covid_component_3'><CasesCard logo={<BsCardChecklist/>} title={"Active cases"} number={worldStats.ActiveCases}/></div>
+    </div> 
+    <div className='right'>
+    <div className='covid_component_4'><CasesCard logo={<GrStatusCritical/>} title={"Critical"} number={worldStats.Serious_Critical}/></div>
+    <div className='covid_component_5'><CasesCard logo={<GiDeathSkull/>} title={"Total Deaths"} number={worldStats.TotalDeaths}/></div>
+    <div className='covid_component_6'><CasesCard logo={<div><MdAddchart/><GiDeathSkull/></div>} title={"New Deaths"} number={worldStats.NewDeaths}/></div>  
+    </div>
     </div>
     </div>
     </>

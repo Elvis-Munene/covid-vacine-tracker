@@ -29,7 +29,10 @@ function App() {
   useEffect(()=>{
     fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/vaccines/get-all-vaccines`, options)
     .then((response)=> response.json())
-    .then((response)=> setVaccineData(response))  
+    .then((response)=> {
+      const limtedData = response.slice(0,5)
+      setVaccineData(limtedData)
+    })   
   },[])
     
 
