@@ -34,7 +34,7 @@ function App() {
     
 
   useEffect(()=>{
-    fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/vaccines/get-all-treatment/?_limit=10`, options)
+    fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/vaccines/get-all-treatment/`, options)
     .then((response)=> response.json())
     .then((response)=> {
       const limtedData = response.slice(0,5)
