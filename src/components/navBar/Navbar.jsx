@@ -10,7 +10,7 @@ function Navbar() {
     <div className="navbar-brand">COVID-TRACKER</div>
     
 
-    <li class="nav-item">
+    <li class="nav-item text-decoration-none">
           <a class="nav-link active" aria-current="page" href="#">COVID-19</a>
         </li>
         <li class="nav-item">
