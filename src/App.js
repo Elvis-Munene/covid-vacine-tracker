@@ -12,6 +12,10 @@ function App() {
   const [vaccineData, setVaccineData] = useState();
   const [treatmentData, setTreatmentData] = useState();
 
+
+
+
+
   const options = {
       method: 'GET',
       headers: {

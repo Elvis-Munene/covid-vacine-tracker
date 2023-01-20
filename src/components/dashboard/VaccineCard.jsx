@@ -5,6 +5,7 @@ function VaccineCard({ title, content, phase }) {
   return (
     <>
     
+
      
   <div className="card text-bg-info mb-3">
     <div className="card">
