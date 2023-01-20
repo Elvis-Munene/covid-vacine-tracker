@@ -6,10 +6,6 @@ function Vaccine({vaccineStats}) {
 
   const [searchValue, setSearchValue] = useState('')
   
-
-console.log(vaccineStats);
-
-
     // search functionality
     const getFilteredVaccines = () => {
       if (!searchValue) return vaccineStats
@@ -20,14 +16,14 @@ console.log(vaccineStats);
 
   const filteredVaccines = getFilteredVaccines()
 
-console.log(filteredVaccines)
+
   return (
     <>
      <div className="vaccine_title" id='vaccine'><b>The following are some of the various vaccine names and their categories</b></div>
        <div className='ml-4  flex justify-end mt-4 '>
                     <div className=''>
                         <label>Search Vaccine phase </label>
-                        <input  onChange={(e) => setSearchValue(e.target.value)} className='rounded-3xl text-center w-7/12 bg-black text-white' type='search' placeholder='search vaccine....' />
+                        <input  onChange={(e) => setSearchValue(e.target.value)} className='rounded-3xl text-center w-7/12 bg-white text-danger' type='search' placeholder='search vaccine....' />
                     </div>
                 </div>
 
