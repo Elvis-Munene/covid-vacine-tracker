@@ -2,14 +2,14 @@ import React, {useState} from 'react'
 import TreatmentCard from './TreatmentCard'
 import "./Treatment.css"
 
-function Treatment({treatmentStats}) {
+function Treatment({treatmentStats, treatData}) {
   
   const [searchValue, setSearchValue] = useState('')
   
     // search functionality
     const getFilteredTreatments = () => {
       if (!searchValue) return treatmentStats
-      return treatmentStats.filter(
+      return treatData?.filter(
           treatment => treatment.category.toLowerCase().includes(searchValue.toLowerCase())
       )
   }

@@ -11,9 +11,11 @@ function App() {
   const [covidData, setCovidData] = useState();
   const [vaccineData, setVaccineData] = useState();
   const [treatmentData, setTreatmentData] = useState();
+  const [treatmentFullData, setTreatmentFullData] = useState();
+  const [vaccineFullData, setvaccineFullData] = useState();
 
 
-
+console.log(treatmentFullData);
 
 
   const options = {
@@ -35,8 +37,18 @@ function App() {
     fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/vaccines/get-all-vaccines`, options)
     .then((response)=> response.json())
     .then((response)=> {
-      const limtedData = response.slice(0,5)
+      const limtedData = response.slice(0,10)
       setVaccineData(limtedData)
+    })   
+  },[])
+
+
+
+  useEffect(()=>{
+    fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/vaccines/get-all-vaccines`, options)
+    .then((response)=> response.json())
+    .then((response)=> {
+    setvaccineFullData(response)
     })   
   },[])
     
@@ -45,11 +57,20 @@ function App() {
     fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/vaccines/get-all-treatment/`, options)
     .then((response)=> response.json())
     .then((response)=> {
-      const limtedData = response.slice(0,5)
+      const limtedData = response.slice(0,10)
       setTreatmentData(limtedData)
     })  
 },[])
 
+
+
+useEffect(()=>{
+  fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/vaccines/get-all-treatment/`, options)
+  .then((response)=> response.json())
+  .then((response)=> {
+    setTreatmentFullData(response)
+  })  
+},[])
 
 
 
@@ -58,8 +79,8 @@ function App() {
     <div className="App">
       <Navbar/>
       <Covid covidStats={covidData}/>
-      <Vaccine vaccineStats={vaccineData}/>
-      <Treatment treatmentStats={treatmentData}/>
+      <Vaccine vaccineStats={vaccineData} vacxData={vaccineFullData}/>
+      <Treatment treatmentStats={treatmentData} treatData={treatmentFullData}/>
       <Footer/>
     
     </div>
