@@ -19,7 +19,7 @@ function Treatment({treatmentStats, treatData}) {
 
   return (
     <>
-     <div className="vaccine_title" id='vaccine'><b>The following are some of the treatments and their categories</b></div>
+     <div className="vaccine_title" id='treatment'><b>The following are some of the treatments and their categories</b></div>
        <div className='ml-4  flex justify-end mt-4 '>
                     <div className=''>
                         <label>Search Treatment </label>
