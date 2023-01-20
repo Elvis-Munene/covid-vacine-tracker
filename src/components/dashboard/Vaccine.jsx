@@ -7,18 +7,7 @@ function Vaccine({vaccineStats}) {
 
 
 
-// const render_articles = vaccineStats.map(
-//     (articlesRow) =>
-      
-//         <div className="articles-row">
-//           <h1>{articlesRow.trimedName}</h1>
-//           <div>
-//             <h2>Incident type:{articlesRow.category}</h2>
-//           </div>
-//         </div>
-      
-//   );
-
+console.log(vaccineStats);
 
 
 
@@ -37,6 +26,7 @@ function Vaccine({vaccineStats}) {
    key={index}
    title={vaccine.trimedName}
    content={vaccine.category}
+   phase={vaccine.phase}
 
 />
         )

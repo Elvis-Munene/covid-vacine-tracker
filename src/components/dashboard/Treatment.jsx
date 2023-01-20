@@ -3,11 +3,12 @@ import TreatmentCard from './TreatmentCard'
 import "./Treatment.css"
 
 function Treatment({treatmentStats}) {
-    
+  console.log(treatmentStats)
   return (
     <>
-    <div className='treatment_class'>
     <div id='treatment'><b>The following are some of the covid 19 treatments that have been done</b></div>
+    <div className='treatment_class'>
+
    
          { treatmentStats?.map((treatment, index) => {
     return(
