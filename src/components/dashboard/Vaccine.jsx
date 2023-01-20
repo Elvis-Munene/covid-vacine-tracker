@@ -1,8 +1,17 @@
 import React, {useState} from 'react'
 import VaccineCard from './VaccineCard'
 import './Vaccine.css'
+import incrementGenerator from 'increment-generator'
 
 function Vaccine({vaccineStats}) {
+
+  const counter = incrementGenerator()
+ 
+  console.log(counter()) // -> 1
+  console.log(counter()) // -> 2
+  console.log(counter()) // -> 3
+  console.log(counter()) // -> 4
+
 
   const [searchValue, setSearchValue] = useState('')
   
@@ -30,6 +39,7 @@ function Vaccine({vaccineStats}) {
                 <section className='bg-slate-200 m-auto h-[65vh] mt-2 w-11/12  pb-2 overflow-hidden hover:overflow-y-scroll rounded-md'>
                    
                    <div className=' m-2  grid grid-cols-3 gap-4 '>
+                    
                        {filteredVaccines?.map((vaccine, index) => {
                            return (
                             <VaccineCard
