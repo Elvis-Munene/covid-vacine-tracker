@@ -4,6 +4,7 @@ import Treatment from './components/dashboard/Treatment';
 import React,  { useState, useEffect } from 'react';
 import Vaccine from './components/dashboard/Vaccine';
 import Navbar from './components/navBar/Navbar';
+import Footer from './components/footer/Footer';
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
       <Covid covidStats={covidData}/>
       <Vaccine vaccineStats={vaccineData}/>
       <Treatment treatmentStats={treatmentData}/>
+      <Footer/>
     
     </div>
   );
